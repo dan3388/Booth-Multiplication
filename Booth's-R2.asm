@@ -3,9 +3,6 @@
 #Winter 2026
 #Boot's Multiplication Radix-2 Algorith
 #----------------------------------------
-#The explination from this video allowed me to come up with ideas on how to do this
-#https://www.youtube.com/watch?v=4zFd3zZlguY
-
 
 .data
 multiplicant_prompt: .asciiz "\nEnter multiplicant in decimal: (-128 to 128)"
@@ -105,4 +102,5 @@ shift:
     bne $t0, $zero, loop    # exit on 8th run
 exit:
     li $v0, 10
+
     syscall
